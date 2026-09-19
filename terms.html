@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions | SILKWaala</title>
+<meta name="description" content="Terms and conditions for the SILKWaala website and factory outlet in Varanasi.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .legal{ padding:70px 0 90px; }
+  .legal h1{ margin-bottom:.2em; }
+  .legal .updated{ color:var(--ink-soft); font-size:.9rem; margin-bottom:40px; display:block; }
+  .legal h2{ font-size:1.3rem; margin-top:2em; }
+  .legal p, .legal li{ color:var(--ink-soft); max-width:70ch; }
+  .legal ol, .legal ul{ padding-left:1.2em; }
+  .legal li{ margin-bottom:.5em; }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="nav">
+    <a href="index.html" class="brand" aria-label="SILKWaala home">
+      <strong>SILK</strong>Waala
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#why">Why Us</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="tel:+916393687201" class="nav-cta">Call: +91-63936 87201</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container legal">
+    <span class="kicker" style="color:var(--gold);font-family:var(--serif);font-style:italic;">Legal</span>
+    <h1>Terms &amp; Conditions</h1>
+    <span class="updated">Last updated: <span id="updated"></span></span>
+
+    <p>This website (silkwaala.com) is an informational showcase for SILKWaala, a Banarasi silk factory outlet located at K 40/77 Bhaironath, Varanasi. By using this site, you agree to the terms below.</p>
+
+    <h2>1. About this site</h2>
+    <p>This website is provided to showcase SILKWaala's products, services and outlet location. It does not currently process online orders or payments — all purchases are made in person at our outlet, or arranged directly with us over phone/WhatsApp.</p>
+
+    <h2>2. Product information</h2>
+    <ul>
+      <li>Colours, patterns and zari work shown in photos may vary slightly from the actual product due to screen display and the handwoven, handmade nature of our silk.</li>
+      <li>Prices, where discussed, are confirmed at the outlet or directly with our team, and are not fixed by anything shown on this website.</li>
+      <li>Availability of specific sarees, dresses or shrugs is subject to stock at the outlet.</li>
+    </ul>
+
+    <h2>3. Intellectual property</h2>
+    <p>All content on this website — including text, photographs, and the SILKWaala name and logo — is the property of SILKWaala unless otherwise stated, and may not be copied or reused without permission.</p>
+
+    <h2>4. Third-party links</h2>
+    <p>This site may link to third-party services such as WhatsApp, Google Maps, or social media platforms. We are not responsible for the content or privacy practices of those external sites.</p>
+
+    <h2>5. Contact for purchases &amp; queries</h2>
+    <p>For pricing, availability, custom orders or any other query, please contact us directly by phone or WhatsApp at +91-63936 87201, or visit the outlet at K 40/77 Bhaironath, Varanasi, next to Kalbhairav Mandir.</p>
+
+    <h2>6. Changes to these terms</h2>
+    <p>We may update this page from time to time as the site or business changes. Please check back occasionally for the latest version.</p>
+
+    <h2>7. Copyright</h2>
+    <p>© <span id="year"></span> SILKWaala. All rights reserved.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">SILKWaala</div>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#why">Why Us</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year2"></span> SILKWaala. All rights reserved.</span>
+      <span>Factory Outlet · Bhaironath, Varanasi</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year2').textContent = new Date().getFullYear();
+  document.getElementById('updated').textContent = new Date().toLocaleDateString('en-IN', { year:'numeric', month:'long' });
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
